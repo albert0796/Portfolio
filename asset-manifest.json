@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.851f0578.js",
+    "main.js": "/portfolio/static/js/main.99786ed1.js",
     "static/media/xai.mp4": "/portfolio/static/media/xai.9615f4d68a45c587ed7e.mp4",
     "static/media/toad.mp4": "/portfolio/static/media/toad.373dadf50bca95fb491c.mp4",
     "static/media/deepTravel.mp4": "/portfolio/static/media/deepTravel.98362c287f9c89b30022.mp4",
@@ -28,9 +28,9 @@
     "static/media/kellyCriterion.png": "/portfolio/static/media/kellyCriterion.f604c991b53e4f49b9d1.png",
     "static/media/oddsbeta.png": "/portfolio/static/media/oddsbeta.b9970013ebfb88ec6268.png",
     "index.html": "/portfolio/index.html",
-    "main.851f0578.js.map": "/portfolio/static/js/main.851f0578.js.map"
+    "main.99786ed1.js.map": "/portfolio/static/js/main.99786ed1.js.map"
   },
   "entrypoints": [
-    "static/js/main.851f0578.js"
+    "static/js/main.99786ed1.js"
   ]
 }
