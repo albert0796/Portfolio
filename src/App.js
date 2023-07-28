@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { CssBaseline, useMediaQuery, Box } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+
+import { Portfolio, Test } from './page';
+import { Header, Footer } from './components';
+import { PortfolioContextProvider } from './contexts';
 
 function App() {
+  // const isPC = useMediaQuery(useTheme().breakpoints.up('pc'));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CssBaseline>
+        <PortfolioContextProvider>
+          <Header />
+          <div>
+            <Routes>
+              <Route path="/" element={(<Portfolio />)} />
+            </Routes>
+            <Routes>
+              <Route path="/test" element={(<Test />)} />
+            </Routes>
+          </div>
+          <Footer />
+        </PortfolioContextProvider>
+      </CssBaseline>
     </div>
   );
 }
