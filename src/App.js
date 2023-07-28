@@ -18,8 +18,6 @@ function App() {
           <div>
             <Routes>
               <Route path="/" element={(<Portfolio />)} />
-            </Routes>
-            <Routes>
               <Route path="/test" element={(<Test />)} />
             </Routes>
           </div>
