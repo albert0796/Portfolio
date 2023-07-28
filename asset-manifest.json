@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.851f0578.js",
+    "static/media/xai.mp4": "/portfolio/static/media/xai.9615f4d68a45c587ed7e.mp4",
+    "static/media/toad.mp4": "/portfolio/static/media/toad.373dadf50bca95fb491c.mp4",
+    "static/media/deepTravel.mp4": "/portfolio/static/media/deepTravel.98362c287f9c89b30022.mp4",
+    "static/media/oddsbeta.mp4": "/portfolio/static/media/oddsbeta.4e9159725cecd90dd82b.mp4",
+    "static/media/widget.mp4": "/portfolio/static/media/widget.75cb56aa91eac861061e.mp4",
+    "static/media/finance.png": "/portfolio/static/media/finance.a7bde2017b66fb5064f1.png",
+    "static/media/awsSpApi.png": "/portfolio/static/media/awsSpApi.b58d756f776cac2a8812.png",
+    "static/media/toad.png": "/portfolio/static/media/toad.cf5ee2881d13422ca834.png",
+    "static/media/deepTravel.png": "/portfolio/static/media/deepTravel.54585607eb3e5403bb87.png",
+    "static/media/traffic.png": "/portfolio/static/media/traffic.e341d16f7e28dc18ce16.png",
+    "static/media/patternHunterProcedure.png": "/portfolio/static/media/patternHunterProcedure.5391915c295109a80749.png",
+    "static/media/ml.png": "/portfolio/static/media/ml.8085a5e2683766abf647.png",
+    "static/media/algorithms.png": "/portfolio/static/media/algorithms.aafb6e8c7cb310a0c441.png",
+    "static/media/linearAlgebra.png": "/portfolio/static/media/linearAlgebra.f753cc9e7dcb558a20e2.png",
+    "static/media/userSystem.png": "/portfolio/static/media/userSystem.f1f0ad93a23428e21cb4.png",
+    "static/media/econometric.png": "/portfolio/static/media/econometric.68cf4b76f6cc4ce0da0c.png",
+    "static/media/ntu.png": "/portfolio/static/media/ntu.9ec045f98f7590921695.png",
+    "static/media/patternHunter.png": "/portfolio/static/media/patternHunter.ce34ab443582ac824a05.png",
+    "static/media/insurance.png": "/portfolio/static/media/insurance.a5fa28d326a787dd7f2b.png",
+    "static/media/stacking.png": "/portfolio/static/media/stacking.0a0798ad92d5308073a9.png",
+    "static/media/house.png": "/portfolio/static/media/house.2f1b9e00ca4160d7919d.png",
+    "static/media/crowdfunding.png": "/portfolio/static/media/crowdfunding.25db38329d036c272c52.png",
+    "static/media/xai.png": "/portfolio/static/media/xai.40b46b12666b9c4e0f30.png",
+    "static/media/widget.png": "/portfolio/static/media/widget.52b73a47c119a0b25f67.png",
+    "static/media/kellyCriterion.png": "/portfolio/static/media/kellyCriterion.f604c991b53e4f49b9d1.png",
+    "static/media/oddsbeta.png": "/portfolio/static/media/oddsbeta.b9970013ebfb88ec6268.png",
+    "index.html": "/portfolio/index.html",
+    "main.851f0578.js.map": "/portfolio/static/js/main.851f0578.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.851f0578.js"
+  ]
+}
