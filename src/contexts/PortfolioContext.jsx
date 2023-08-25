@@ -50,7 +50,7 @@ function PortfolioContextProvider({ children }) {
       },
       details: [
         'The website displays real-time news and gambling odds information for various sports events. It also provides the widget of sports event information dashboards for companies or developers to integrate into their system.',
-        'I execute the website deployment and develop all the front-end interfaces, including information columns of the sport event, functional blocks, news page, and the Widget sales page. The front-end framework is React.js and the website is deployed on the Google Cloud Platform (GCP).',
+        'I execute the website deployment and develop the front-end interfaces, including information columns of the sport event, functional blocks, news page, and the Widget sales page. The front-end framework is React.js and the website is deployed on the Google Cloud Platform (GCP).',
       ],
       link: {
         website: 'https://oddsbeta.com/',
@@ -76,7 +76,7 @@ function PortfolioContextProvider({ children }) {
       },
       details: [
         'The Widget presents the real time score and schedule about various sports events, like cricket, football, and basketball, in the form of scorecard and provides it as a package for users. Users can simply integrate the scorecard Widget into their own websites, without the need for additional frontend and backend development or utility designs.',
-        'I execute all the frontend development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
+        'I execute the frontend development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
       ],
       link: {
         website: 'https://sprodm.uni247.xyz/#/category/cricket',
@@ -101,7 +101,7 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'I excute the full-end development of the Toad Wine Company Website, including all the front-end’s interface and website deployment and the back-end’s Blogger and Firebase database development.',
+        'I excute the full-end development of the Toad Wine Company Website, including the front-end’s interface and website deployment and the back-end’s Blogger and Firebase database development.',
         'The project uses Blogger and Firebase as the backend system and hosts the website on the Google console platform. The merchant posts the desired articles and images in the Blogger blog, and the website will request the content using the Blogger API and render them on the website. Additionally, given the privacy matter, the purchase records of members are stored in an external database built by Firebase, and the website will also post data using API key to the Firestore database.',
       ],
       link: {
