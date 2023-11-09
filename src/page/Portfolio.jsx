@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Typography, Button, Grid, Box, Backdrop } from '@mui/material';
 
-import { Oddsbeta, Toad, Widget, AWS, MemberSystem,
+import { LuckyMart, Oddsbeta, Toad, Widget, AWS, MemberSystem,
   XAI, Travel, PatternHunter, Crowdfunding,
   Insurance, House,
   Econometrics, Accounting, Kelly, Traffic,
@@ -106,6 +106,9 @@ function Portfolio() {
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
       >
+        {targetTitle === 'LuckyMart Indian Convenient Store Online Member System Firebase Backend Development'
+        && <LuckyMart handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
+
         {targetTitle === 'ODDSBETA Sport Website'
         && <Oddsbeta handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 

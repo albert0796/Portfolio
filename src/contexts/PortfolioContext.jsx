@@ -8,6 +8,7 @@ import videoDeepTravel from '../assets/deepTravel.mp4';
 import videoCrowdfunding from '../assets/stacking.png';
 import videoPatternHunter from '../assets/patternHunterProcedure.png';
 import imageOdds from '../assets/oddsbeta.png';
+import imageFirebase from '../assets/firebase.png';
 import imageToad from '../assets/toad.png';
 import imageWidget from '../assets/widget.png';
 import imageSpApi from '../assets/awsSpApi.png';
@@ -246,6 +247,31 @@ function PortfolioContextProvider({ children }) {
         github: '',
       },
       skills: 'Flask, Python,Docker, Google Cloud Platform (GCP), AWS SP-API',
+    },
+    // Lucy Mart firebase
+    {
+      id: 20,
+      image: {
+        file: imageFirebase,
+        width: '',
+        height: '',
+      },
+      title: 'LuckyMart Indian Convenient Store Online Member System Firebase Backend Development',
+      category: 'web & app',
+      video: {
+        file: imageFirebase,
+        width: '',
+        height: '',
+      },
+      details: [
+        "I led to apply Firebase's Authentication, online Firestore, Cloud Function, and App Check to develop the develop members' authentication, database, and information security. The authentication includes mobile phone OTP, Email and Facebook certification. All the process was also tested under Firebase local emulator.",
+      ],
+      link: {
+        website: '',
+        document: '',
+        github: 'https://www.luckymart.co.in/',
+      },
+      skills: 'Firebase Cloud Functions, Authentication, Firestore, App Check, Security Rule, and local emulator, React.js. Javascript, CSS, html',
     },
     // toad
     {

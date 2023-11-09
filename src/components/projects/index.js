@@ -17,3 +17,4 @@ export { NTU } from './NTU';
 export { Algorithms } from './Algorithms';
 export { MachineLearning } from './MachineLearning';
 export { LinearAlgebra } from './LinearAlgebra';
+export { LuckyMart } from './LuckyMart';
