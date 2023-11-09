@@ -30,90 +30,196 @@ import imageLinearAlgebra from '../assets/linearAlgebra.png';
 export const PortfolioContext = createContext();
 
 function PortfolioContextProvider({ children }) {
-  const categories = ['all', 'web & app', 'machine learning', 'data analysis', 'economics', 'class handout'];
+  const categories = ['all', 'machine learning', 'data analysis', 'web & app', 'economics', 'class handout'];
 
   const works = [
-    // oddsbeta
-    {
-      id: 0,
-      image: {
-        file: imageOdds,
-        width: '',
-        height: '',
-      },
-      title: 'ODDSBETA Sport Website',
-      category: 'web & app',
-      video: {
-        file: videoOdds,
-        width: '',
-        height: '',
-      },
-      details: [
-        'The website displays real-time news and gambling odds information for various sports events. It also provides the widget of sports event information dashboards for companies or developers to integrate into their system.',
-        'I execute the website deployment and develop the front-end interfaces, including information columns of the sport event, functional blocks, news page, and the Widget sales page. The front-end framework is React.js and the website is deployed on the Google Cloud Platform (GCP).',
-      ],
-      link: {
-        website: 'https://oddsbeta.com/',
-        document: '',
-        github: '',
-      },
-      skills: 'React.js, HTML, CSS, Javascript, Material UI, Google Cloud Platform (GCP)',
-    },
-    // widget
+    // deep travel
     {
       id: 1,
       image: {
-        file: imageWidget,
+        file: imageDeepTravel,
         width: '',
         height: '',
       },
-      title: 'ODDSBETA Cricket Scorecard Widget',
-      category: 'web & app',
+      title: 'Deep Learning-Based Recommendation APP for Taiwan Tourist Attractions',
+      category: 'machine learning',
       video: {
-        file: videoWidget,
+        file: videoDeepTravel,
         width: '',
         height: '',
       },
       details: [
-        'The Widget presents the real time score and schedule about various sports events, like cricket, football, and basketball, in the form of scorecard and provides it as a package for users. Users can simply integrate the scorecard Widget into their own websites, without the need for additional frontend and backend development or utility designs.',
-        'I execute the frontend development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
+        'This project won the championship in the National College Open Data Artificial Intelligence Competition.',
+        "The project aims to build an iOS app that provides recommendations for tourist attractions in Taiwan to fulfill users' travel needs while visiting Taiwan. When users capture any interesting scenes around the world, and input them into the app, the system will utilize a deep learning model to recognize and recommend Taiwan tourist spots that are most like the captured scene.",
+        "The recognition models apply transfer learning, includes ResNet50, MobileNet, DenseNet and VGG16. I also try different optimizers, normalization, activations, learning rates to tune the models. As to mobile devices, I integrated Core ML 2.0, a machine learning framework introduced by Apple at WWWDC 2018, into the app. All the computation is run by GCP virtual machine."
       ],
       link: {
-        website: 'https://sprodm.uni247.xyz/#/category/cricket',
-        document: 'https://skinny-quartz-d64.notion.site/Oddsbeta-Cricket-Widget-Document-66ee36b8b722485bb56d7eb1db2d757b?pvs=4',
-        github: '',
+        website: '',
+        document: 'https://github.com/albert0796/MachineLearning/blob/master/Project_TaiwanDeepTravel/Report/Project%20Description_Open%20Data%20Analysis%20Competition.pdf',
+        github: 'https://github.com/albert0796/MachineLearning/tree/master/Project_TaiwanDeepTravel',
       },
-      skills: 'React.js, HTML, CSS, Javascript, Material UI, Google Cloud Platform (GCP)',
+      skills: 'Deep learning, Transfer learning, iOS Core ML 2.0, Image data annotation, Google Cloud computing, Data augmentation',
     },
-    // toad
+    // xai
+    {
+      id: 0,
+      image: {
+        file: imageXai,
+        width: '',
+        height: '',
+      },
+      title: 'Explainable Digital Currency Candlestick Pattern AI Learner',
+      category: 'machine learning',
+      video: {
+        file: videoXai,
+        width: '',
+        height: '',
+      },
+      details: [
+        'The paper gets accepted at the Knowledge and Smart Technology (KST) 2022 International Conference, hosted by IEEE.',
+        'Given the black-box of deep neural network (DNN), the study aims to expose and enhance the explainability of a DNN-based trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. The study applies modified adversarial attack to explore the model’s explainability and data augmentation to generate adversarial training samples for models to enhance its explainability.',
+      ],
+      link: {
+        website: 'https://ieeexplore.ieee.org/document/9727231?fbclid=IwAR3doeRuCKiY19_yQbSFqeiKBnurg4n1eK9tPEETEpiCXp2kolE1hYB-I7M',
+        document: 'https://drive.google.com/file/d/1ii87CH1jMoPjkiLWGv_j_yqF9VJhzKVX/view',
+        github: 'https://github.com/pecu/FinancialVision/tree/master/Explainable%20Digital%20Currency%20Candlestick%20Pattern%20AI%20Learner',
+      },
+      skills: 'Explainable Artificial Intelligence, Data Augmentation, Adversarial Attacks, Convolutional Neural Network, Candlestick Patterns, Time-Series Encoding, Financial Vision',
+    },
+    // insurance
+    {
+      id: 4,
+      image: {
+        file: imageInsurance,
+        width: '',
+        height: '',
+      },
+      title: 'Cathlife Critical Illness Insurance Purchasing Data Analysis',
+      category: 'data analysis',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'The project won the 34th place out of 300 nationwide in the Cathay Life Big Data Competition.',
+        "The project aims to utilize customers' historical data to predict whether existing customers will purchase critical illness insurance policies within a specific timeframe.",
+        'The analysis focuses on the insurance-domain-based data analysis. It places great emphasis on data cleaning and addressing unbalanced (98000:2000) dataset. It also builds analysis pipeline, which includes data cleaning, exploratory data analysis (EDA), feature engineering and model validation.',
+      ],
+      link: {
+        website: '',
+        document: 'https://github.com/albert0796/MachineLearning/blob/master/Competition_Cathlife/report/Cathlife%20Critical%20Illness%20Insurance%20Purchasing%20Data%20Analysis.pdf',
+        github: 'https://github.com/albert0796/MachineLearning/tree/master/Competition_Cathlife',
+      },
+      skills: 'Machine Learning, Python, Exploratory Data Analysis (EDA), Data Cleaning, Domain-based Data Analysis',
+    },
+    // pattern hunter
     {
       id: 2,
       image: {
-        file: imageToad,
+        file: imagePatternHunter,
         width: '',
         height: '',
       },
-      title: 'TOAD Wine Company Website',
-      category: 'web & app',
+      title: 'Deep Learning-Based Candlestick Pattern Recognition System',
+      category: 'machine learning',
       video: {
-        file: videoToad,
+        file: videoPatternHunter,
         width: '',
         height: '',
       },
       details: [
-        'I excute the full-end development of the Toad Wine Company Website, including the front-end’s interface and website deployment and the back-end’s Blogger and Firebase database development.',
-        'The project uses Blogger and Firebase as the backend system and hosts the website on the Google console platform. The merchant posts the desired articles and images in the Blogger blog, and the website will request the content using the Blogger API and render them on the website. Additionally, given the privacy matter, the purchase records of members are stored in an external database built by Firebase, and the website will also post data using API key to the Firestore database.',
+        "To take advantage of the candlestick pattern recognition to a great extent and support the trader, we build an AI-based system that can absorb professional traders' domain knowledge and excel in visual recognition.",
+        "The system is a minimum viable product with a GAF-CNN model deployed on the cloud, user interface for traders to label patterns, dashboard to summarize result and back-end database to store historical data and labeled patterns."
       ],
       link: {
-        website: 'https://toad2015.com/',
+        website: '',
         document: '',
+        github: 'https://github.com/albert0796/MachineLearning/tree/master/Pattern%20Hunter',
+      },
+      skills: 'Deep Learning, Computer Vision, Python, Django, Javascript, Bootstrap, Financial Domain',
+    },
+    // crowdfunding
+    {
+      id: 3,
+      image: {
+        file: imageCrowdfunding,
+        width: '',
+        height: '',
+      },
+      title: 'Ensemble Machine Learning on Crowdfunding Data for Project Status and Amount Pledge Prediction',
+      category: 'machine learning',
+      video: {
+        file: videoCrowdfunding,
+        width: '',
+        height: '',
+      },
+      details: [
+        'The project aims to evaluate the success status and the final pledge amount of a launched project at the early stage in Kickstarter and Indiegogo, which are two world-famous crowdfunding platforms.',
+        'I apply the Stacking, an ensemble machine learning method, to make prediction and compare its performance with different machine learning models, including XGBoost, Neural Network, Ridge Regression, Random Forest, SVM, etc. The project also builds analysis pipeline, which includes data cleaning, EDA, feature engineering and model validation.'],
+      link: {
+        website: '',
+        document: '',
+        github: 'https://github.com/albert0796/MachineLearning/tree/master/Paper_CrowdFunding',
+      },
+      skills: 'Machine Learning, Python, Exploratory Data Analysis (EDA)',
+    },
+    // house
+    {
+      id: 5,
+      image: {
+        file: imageHouse,
+        width: '',
+        height: '',
+      },
+      title: "Kaggle's House Prices Prediction",
+      category: 'data analysis',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'The goal of the project is to predict the final sale prices of houses. The dataset contains various features of residential home, such as the number of bedrooms, the size of the lot, the neighborhood, and many others. The project covers much feature engineering, involving handling missing values, transforming variables, creating interaction terms. Additionally, it applies Stacking, ensemble learning, and hype-tunes multiple machine learning model to predict and make comparison.',
+      ],
+      link: {
+        website: '',
+        document: '',
+        github: "https://github.com/albert0796/MachineLearning/tree/master/Kaggle's%20House%20Price%20Prediction",
+      },
+      skills: 'Machine Learning, Python, Feature Engineering, Data Cleaning, Domain-based Data Analysis',
+    },
+    // Electric Vehicle
+    {
+      id: 12,
+      image: {
+        file: imageFinance,
+        width: '',
+        height: '',
+      },
+      title: "Evaluation and Financial Analysis of Taiwan's Electric Vehicle Supply Chain Companies",
+      category: 'economics',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        "The project achieved third place in the Enterprise Value and Risk Analysis category of the Soochow University's 2018 College of Commerce's research competition.",
+        "2.	This study conducts an industry analysis of the supply chain for Tesla electric vehicle charging connectors, focusing on both the global and Taiwanese markets.",
+        'It extensively examines the financial statements of three Taiwanese suppliers, namely BizLink Holding Inc, SINBON Electronics, and K. S. TERMINALS INC., to analyze various financial aspects including profitability, cash flow, operational efficiency, short-term debt, long-term debt, and DuPont analysis.',
+        'Based on the findings, the most financially robust company is identified, and a stock price forecast is generated to provide investment predictions.',
+      ],
+      link: {
+        website: '',
+        document: 'https://drive.google.com/file/d/1GcorFN6xEVS7mAJYjfR3pXs4niva6nhQ/view?usp=sharing',
         github: '',
       },
-      skills: 'React.js, HTML, CSS, Javascript, Material UI, Firebase, Blogger',
+      skills: 'Financial Statement Analysis, Accounting, Industrial Analysis, Investment',
     },
     // accounting conversion
     {
-      id: 3,
+      id: 9,
       image: {
         file: imageSpApi,
         width: '',
@@ -141,9 +247,87 @@ function PortfolioContextProvider({ children }) {
       },
       skills: 'Flask, Python,Docker, Google Cloud Platform (GCP), AWS SP-API',
     },
+    // toad
+    {
+      id: 8,
+      image: {
+        file: imageToad,
+        width: '',
+        height: '',
+      },
+      title: 'TOAD Wine Company Website',
+      category: 'web & app',
+      video: {
+        file: videoToad,
+        width: '',
+        height: '',
+      },
+      details: [
+        'I managed the full-stack development of the Toad Wine Company Website, including all the front-end’s interface, including website animations homepage, product catalog, and the back-end Blogger and Firebase database development.',
+        'The project uses Blogger and Firebase as the backend system and hosts the website on the Google console platform. The merchant posts the desired articles and images in the Blogger blog, and the website will request the content using the Blogger API and render them on the website. Additionally, given the privacy matter, the purchase records of members are stored in an external database built by Firebase.',
+      ],
+      link: {
+        website: 'https://toad2015.com/',
+        document: '',
+        github: '',
+      },
+      skills: 'React.js, HTML, CSS, Javascript, Material UI, Firebase, Blogger',
+    },
+    // oddsbeta
+    {
+      id: 6,
+      image: {
+        file: imageOdds,
+        width: '',
+        height: '',
+      },
+      title: 'ODDSBETA Sport Website',
+      category: 'web & app',
+      video: {
+        file: videoOdds,
+        width: '',
+        height: '',
+      },
+      details: [
+        'The website displays real-time news and gambling odds information for various sports events. It also provides the widget of sports event information dashboards for companies or developers to integrate into their system.',
+        'I managed the website deployment and development of all the front-end interfaces, including information columns of the sport event, functional blocks, news page, and the Widget sales page. The front-end framework is React.js and the website is deployed on the Google Cloud Platform (GCP).',
+      ],
+      link: {
+        website: 'https://oddsbeta.com/',
+        document: '',
+        github: '',
+      },
+      skills: 'React.js, HTML, CSS, Javascript, Material UI, Google Cloud Platform (GCP)',
+    },
+    // widget
+    {
+      id: 7,
+      image: {
+        file: imageWidget,
+        width: '',
+        height: '',
+      },
+      title: 'ODDSBETA Cricket Scorecard Widget',
+      category: 'web & app',
+      video: {
+        file: videoWidget,
+        width: '',
+        height: '',
+      },
+      details: [
+        'The Widget presents the real time score and schedule about various sports events, like cricket, football, and basketball, in the form of scorecard and provides it as a package for users. Users can simply integrate the scorecard Widget into their own websites, without the need for additional frontend and backend development or utility designs.',
+        'I led all the frontend development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
+      ],
+      link: {
+        website: 'https://sprodm.uni247.xyz/#/category/cricket',
+        document: 'https://skinny-quartz-d64.notion.site/Oddsbeta-Cricket-Widget-Document-66ee36b8b722485bb56d7eb1db2d757b?pvs=4',
+        github: '',
+      },
+      skills: 'React.js, HTML, CSS, Javascript, Material UI, Google Cloud Platform (GCP)',
+    },
     // member system
     {
-      id: 4,
+      id: 10,
       image: {
         file: imageUserSystem,
         width: '',
@@ -169,160 +353,6 @@ function PortfolioContextProvider({ children }) {
       },
       skills: 'Flask, Python, Docker, Google Cloud Platform (GCP)',
     },
-    // xai
-    {
-      id: 5,
-      image: {
-        file: imageXai,
-        width: '',
-        height: '',
-      },
-      title: 'Explainable Digital Currency Candlestick Pattern AI Learner',
-      category: 'machine learning',
-      video: {
-        file: videoXai,
-        width: '',
-        height: '',
-      },
-      details: [
-        'The paper gets accepted at the Knowledge and Smart Technology (KST) 2022 International Conference, hosted by IEEE.',
-        'Given the black-box of deep neural network (DNN), the study aims to expose and enhance the explainability of a DNN-based classic trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. For more details, please refer to the GitHub, conference video and full paper.',
-      ],
-      link: {
-        website: 'https://ieeexplore.ieee.org/document/9727231?fbclid=IwAR3doeRuCKiY19_yQbSFqeiKBnurg4n1eK9tPEETEpiCXp2kolE1hYB-I7M',
-        document: 'https://drive.google.com/file/d/1ii87CH1jMoPjkiLWGv_j_yqF9VJhzKVX/view',
-        github: 'https://github.com/pecu/FinancialVision/tree/master/Explainable%20Digital%20Currency%20Candlestick%20Pattern%20AI%20Learner',
-      },
-      skills: 'Explainable Artificial Intelligence, Data Augmentation, Adversarial Attacks, Convolutional Neural Network, Candlestick Patterns, Time-Series Encoding, Financial Vision',
-    },
-    // deep travel
-    {
-      id: 6,
-      image: {
-        file: imageDeepTravel,
-        width: '',
-        height: '',
-      },
-      title: 'Deep Learning-Based Recommendation APP for Taiwan Tourist Attractions',
-      category: 'machine learning',
-      video: {
-        file: videoDeepTravel,
-        width: '',
-        height: '',
-      },
-      details: [
-        'This project won the championship in the National College Open Data Artificial Intelligence Competition.',
-        "The project aims to build an iOS app that provides recommendations for tourist attractions in Taiwan to fulfill users' travel needs while visiting Taiwan. When users capture any interesting scenes around the world, and input them into the app, the system will utilize a deep learning model to recognize and recommend Taiwan tourist spots that are most like the captured scene.",
-      ],
-      link: {
-        website: '',
-        document: 'https://github.com/albert0796/MachineLearning/blob/master/Project_TaiwanDeepTravel/Report/Project%20Description_Open%20Data%20Analysis%20Competition.pdf',
-        github: 'https://github.com/albert0796/MachineLearning/tree/master/Project_TaiwanDeepTravel',
-      },
-      skills: 'Deep learning, Transfer learning, iOS Core ML 2.0, Image data annotation, Google Cloud computing, Data augmentation',
-    },
-    // pattern hunter
-    {
-      id: 7,
-      image: {
-        file: imagePatternHunter,
-        width: '',
-        height: '',
-      },
-      title: 'Deep Learning-Based Candlestick Pattern Recognition System',
-      category: 'machine learning',
-      video: {
-        file: videoPatternHunter,
-        width: '',
-        height: '',
-      },
-      details: [
-        "To take advantage of the candlestick pattern recognition to a great extent and support the trader, we build an AI-based system that can absorb professional traders' domain knowledge and excel in visual recognition. Moreover, the system can automatically execute the procedure and have the customized user interface. And the user of traders can avoid the human error and make investment more efficiently.",
-      ],
-      link: {
-        website: '',
-        document: '',
-        github: 'https://github.com/albert0796/MachineLearning/tree/master/Pattern%20Hunter',
-      },
-      skills: 'Deep Learning, Computer Vision, Python, Django, Javascript, Bootstrap, Financial Domain',
-    },
-    // crowdfunding
-    {
-      id: 8,
-      image: {
-        file: imageCrowdfunding,
-        width: '',
-        height: '',
-      },
-      title: 'Ensemble Machine Learning on Crowdfunding Data for Project Status and Amount Pledge Prediction',
-      category: 'machine learning',
-      video: {
-        file: videoCrowdfunding,
-        width: '',
-        height: '',
-      },
-      details: [
-        'The project aims to evaluate the success status and the final pledge amount of a launched project at the early stage in Kickstarter and Indiegogo, which are two world-famous crowdfunding platforms.',
-        'To predict the success status and the final pledge amount of a launched project, I apply the Stacking, an ensemble machine learning method, to make prediction. Furthermore, I also train multiple machine learning models with hyperparameter tuning and compare the performance of the Stacking model with those models. For more details of the project, please refer to the GitHub.'],
-      link: {
-        website: '',
-        document: '',
-        github: 'https://github.com/albert0796/MachineLearning/tree/master/Paper_CrowdFunding',
-      },
-      skills: 'Machine Learning, Python, Exploratory Data Analysis (EDA)',
-    },
-    // insurance
-    {
-      id: 9,
-      image: {
-        file: imageInsurance,
-        width: '',
-        height: '',
-      },
-      title: 'Cathlife Critical Illness Insurance Purchasing Data Analysis',
-      category: 'data analysis',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'The project won the 34th place out of 300 nationwide in the Cathay Life Big Data Competition when I represented the lab to participate during internship at IF.Lab.',
-        "The project aims to utilize customers' historical data to predict whether existing customers will purchase critical illness insurance policies within a specific timeframe. The model will help identify customers with higher insurance needs and provide sales professionals with a method to target potential customers.",
-        'The analysis focuses on the domain-based data analysis, and also places lots of effort on the Exploratory Data Analysis (EDA) and data cleaning. And, those pre-processing methods and model construction also covers multiple machine learning methods.',
-      ],
-      link: {
-        website: '',
-        document: 'https://github.com/albert0796/MachineLearning/blob/master/Competition_Cathlife/report/Cathlife%20Critical%20Illness%20Insurance%20Purchasing%20Data%20Analysis.pdf',
-        github: 'https://github.com/albert0796/MachineLearning/tree/master/Competition_Cathlife',
-      },
-      skills: 'Machine Learning, Python, Exploratory Data Analysis (EDA), Data Cleaning, Domain-based Data Analysis',
-    },
-    // house
-    {
-      id: 10,
-      image: {
-        file: imageHouse,
-        width: '',
-        height: '',
-      },
-      title: "Kaggle's House Prices Prediction",
-      category: 'data analysis',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'The goal of the project is to predict the final sale prices of houses. The dataset contains various features of residential home, such as the number of bedrooms, the size of the lot, the neighborhood, and many others. The project covers much feature engineering, involving handling missing values, transforming variables, creating interaction terms. Additionally, it applies Stacking, ensemble learning, and hype-tunes multiple machine learning model to predict and make comparison.',
-      ],
-      link: {
-        website: '',
-        document: '',
-        github: "https://github.com/albert0796/MachineLearning/tree/master/Kaggle's%20House%20Price%20Prediction",
-      },
-      skills: 'Machine Learning, Python, Feature Engineering, Data Cleaning, Domain-based Data Analysis',
-    },
     // econometric
     {
       id: 11,
@@ -347,111 +377,6 @@ function PortfolioContextProvider({ children }) {
         github: '',
       },
       skills: 'SAS, Econometric, Financial Statement Analysis, Statistics',
-    },
-    // Electric Vehicle
-    {
-      id: 12,
-      image: {
-        file: imageFinance,
-        width: '',
-        height: '',
-      },
-      title: "Evaluation and Financial Analysis of Taiwan's Electric Vehicle Supply Chain Companies",
-      category: 'economics',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'This study conducts an industry analysis of the supply chain for Tesla electric vehicle charging connectors, focusing on both the global and Taiwanese markets.',
-        'It extensively examines the financial statements of three Taiwanese suppliers, namely BizLink Holding Inc, SINBON Electronics, and K. S. TERMINALS INC., to analyze various financial aspects including profitability, cash flow, operational efficiency, short-term debt, long-term debt, and DuPont analysis.',
-        'Based on the findings, the most financially robust company is identified, and a stock price forecast is generated to provide investment predictions.',
-      ],
-      link: {
-        website: '',
-        document: 'https://drive.google.com/file/d/1GcorFN6xEVS7mAJYjfR3pXs4niva6nhQ/view?usp=sharing',
-        github: '',
-      },
-      skills: 'Financial Statement Analysis, Accounting, Industrial Analysis, Investment',
-    },
-    // kelly
-    {
-      id: 13,
-      image: {
-        file: imageKelly,
-        width: '',
-        height: '',
-      },
-      title: 'The Application of Kelly Criterion in Determining Optimal Capital Structure',
-      category: 'economics',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        "The project achieved third place in the Enterprise Value and Risk Analysis category of the Soochow University ’s 2018 College of Commerce's research competition.",
-        'It combines investment theory with the Kelly criterion to construct an equity growth model for companies, offering strategies for optimal capital structure in the long term. The methodology involves accounting theory, optimization, and the binomial options pricing model (BOPM).',
-      ],
-      link: {
-        website: '',
-        document: 'https://drive.google.com/file/d/1hvEchadxwtRYr91N12KP8njFlgeaFH8z/view?usp=sharing',
-        github: '',
-      },
-      skills: 'Accounting, Futures and Options, Optimization, Calculus',
-    },
-    // traffic
-    {
-      id: 14,
-      image: {
-        file: imageTraffic,
-        width: '',
-        height: '',
-      },
-      title: 'Configuration, Planning, and Exploration of Public Transportation',
-      category: 'economics',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'The project achieved the First place in the 2017 undergraduate thesis competition at the Department of Economics, Soochow University.',
-        'The research aims to investigate how the location, spacing, traffic flow, and density of public transportation stations in a mathematical model can determine the optimal configuration that maximizes overall societal utility. Once the transportation network is established, the study further examines the costs borne by individuals located at various positions when commuting to their workplaces. This analysis helps determine the most suitable commuting mode for each individual.',
-      ],
-      link: {
-        website: '',
-        document: 'https://drive.google.com/file/d/13CQa1AojPX3HPzrwk-6J3ut9BLxYwm-U/view?usp=sharing',
-        github: '',
-      },
-      skills: 'Regional Economics, Optimization, Mathematics',
-    },
-    // ntu
-    {
-      id: 15,
-      image: {
-        file: imageNTU,
-        width: '',
-        height: '',
-      },
-      title: 'Teaching Notes for Financial Innovation Course at National Taiwan University',
-      category: 'class handout',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'It is a teaching note I made for a deep-learning-related class I taught in the financial innovation course, offered by Prof. Yun-Cheng Tsai in National Taiwan University, when I was a lecturer. The class is about applying deep-learning-based visual recognition to financial trading strategy, like candlestick pattern recognition.',
-        'The class covers the concept of trading strategy and the deep learning model and how to put the idea into practice. The practice includes data processing, time series data encoding and Convolution Neural Network modeling and predicting. For more details, please refer to the teaching note and source code.',
-      ],
-      link: {
-        website: '',
-        document: 'https://github.com/albert0796/MachineLearning/blob/master/Financial%20Innovation%20Teaching%20Notes/TeachingNote.md',
-        github: 'https://github.com/albert0796/MachineLearning/tree/master/Financial%20Innovation%20Teaching%20Notes',
-      },
-      skills: 'Deep Learning, Data Processing, Python, Financial Investment',
     },
     // data structure
     {
@@ -529,6 +454,83 @@ function PortfolioContextProvider({ children }) {
         github: 'https://github.com/albert0796/Math/tree/master/ClassHangout_LinearAlgebra',
       },
       skills: 'Linear Algebra, Python',
+    },
+    // kelly
+    {
+      id: 13,
+      image: {
+        file: imageKelly,
+        width: '',
+        height: '',
+      },
+      title: 'The Application of Kelly Criterion in Determining Optimal Capital Structure',
+      category: 'economics',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'It combines investment theory with the Kelly criterion to construct an equity growth model for companies, offering strategies for optimal capital structure in the long term. The methodology involves accounting theory, optimization, and the binomial options pricing model (BOPM).',
+      ],
+      link: {
+        website: '',
+        document: 'https://drive.google.com/file/d/1hvEchadxwtRYr91N12KP8njFlgeaFH8z/view?usp=sharing',
+        github: '',
+      },
+      skills: 'Accounting, Futures and Options, Optimization, Calculus',
+    },
+    // traffic
+    {
+      id: 14,
+      image: {
+        file: imageTraffic,
+        width: '',
+        height: '',
+      },
+      title: 'Configuration, Planning, and Exploration of Public Transportation',
+      category: 'economics',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'The project achieved the First place in the 2017 undergraduate thesis competition at the Department of Economics, Soochow University.',
+        'The research aims to investigate how the location, spacing, traffic flow, and density of public transportation stations in a mathematical model can determine the optimal configuration that maximizes overall societal utility. Once the transportation network is established, the study further examines the costs borne by individuals located at various positions when commuting to their workplaces. This analysis helps determine the most suitable commuting mode for each individual.',
+      ],
+      link: {
+        website: '',
+        document: 'https://drive.google.com/file/d/13CQa1AojPX3HPzrwk-6J3ut9BLxYwm-U/view?usp=sharing',
+        github: '',
+      },
+      skills: 'Regional Economics, Optimization, Mathematics',
+    },
+    // ntu
+    {
+      id: 15,
+      image: {
+        file: imageNTU,
+        width: '',
+        height: '',
+      },
+      title: 'Teaching Notes for Financial Innovation Course at National Taiwan University',
+      category: 'class handout',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'It is a teaching note for a deep-learning-related class I taught in the financial innovation course, offered by Prof. Yun-Cheng Tsai in National Taiwan University. The class is about applying deep-learning-based models to financial trading.',
+        'The class covers the concept of trading strategy and the deep learning model and how to put the idea into practice. The practice includes time series data processing via python, time series data encoding and Convolution Neural Network and Recurrent Neural Network modeling.',
+      ],
+      link: {
+        website: '',
+        document: 'https://github.com/albert0796/MachineLearning/blob/master/Financial%20Innovation%20Teaching%20Notes/TeachingNote.md',
+        github: 'https://github.com/albert0796/MachineLearning/tree/master/Financial%20Innovation%20Teaching%20Notes',
+      },
+      skills: 'Deep Learning, Data Processing, Python, Financial Investment',
     },
   ];
 

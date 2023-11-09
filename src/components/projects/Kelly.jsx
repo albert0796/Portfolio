@@ -38,12 +38,13 @@ function Kelly({ open, handleClose, work }) {
         </DialogTitle>
         <DialogContent>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '0 10px 0 10px' }}>
-            <ol style={{ margin: '0px', color: '#333333' }}>
+            <div style={{ marginBottom: '20px', fontSize: '18px' }}>{work.details[0]}</div>
+            {/* <ol style={{ margin: '0px', color: '#333333' }}>
               {work.details.map((lsitItem, index) => (
                 <li style={{ marginBottom: '20px', fontSize: '18px' }} key={index}>{lsitItem}</li>
               ))}
-            </ol>
-            <div style={{ display: 'flex', flexDirection: 'row', fontSize: '16px', paddingLeft: '18px' }}>
+            </ol> */}
+            <div style={{ display: 'flex', flexDirection: 'row', fontSize: '16px' }}>
               <div style={{ marginRight: '10px', color: '#333333' }}>
                 Skills:
               </div>

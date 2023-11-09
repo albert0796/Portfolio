@@ -52,7 +52,7 @@ function Oddsbeta({ open, handleClose, work }) {
             <div>
               <ol style={{ marginTop: '0px', color: '#333333' }}>
                 {work.details.map((lsitItem, index) => (
-                  <li style={{ marginBottom: '40px', fontSize: '18px' }} key={index}>{lsitItem}</li>
+                  <li style={{ marginBottom: '20px', fontSize: '18px' }} key={index}>{lsitItem}</li>
                 ))}
               </ol>
               <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '20px', fontSize: '16px' }}>

@@ -15,7 +15,7 @@ function PatternHunter({ open, handleClose, work }) {
         open={open}
         onClose={handleClose}
         sx={{
-          '& .MuiPaper-root': { minWidth: '850px' } }}
+          '& .MuiPaper-root': { minWidth: '1000px' } }}
       >
         <IconButton
           size="medium"
@@ -45,7 +45,8 @@ function PatternHunter({ open, handleClose, work }) {
               />
             </div>
             <div style={{ padding: '0 30px 0 30px' }}>
-              <div style={{ color: '#333333', fontSize: '18px', marginBottom: '20px' }}>{work.details[0]}</div>
+              <div style={{ color: '#333333', fontSize: '18px', marginBottom: '15px' }}>{work.details[0]}</div>
+              <div style={{ color: '#333333', fontSize: '18px', marginBottom: '20px' }}>{work.details[1]}</div>
               <div style={{ display: 'flex', flexDirection: 'row', fontSize: '16px' }}>
                 <div style={{ marginRight: '10px', color: '#333333' }}>
                   Skills:

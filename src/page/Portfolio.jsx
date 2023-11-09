@@ -16,7 +16,8 @@ function Portfolio() {
   const [targetTab, setTargetTab] = useState('all');
   // each work card
   const [open, setOpen] = useState(false);
-  const [targetWork, setTargetWork] = useState('');
+  const [targetTitle, setTargetTitle] = useState('');
+  const [targetId, setTargetId] = useState('');
 
   const handleClickTab = (index, category) => {
     const tmpTargets = Array(categories.length).fill(false, 0, categories.length);
@@ -29,8 +30,10 @@ function Portfolio() {
     setOpen(false);
   };
   const handleClickOpenWork = (title) => {
+    const tmpObj = works.filter((obj) => obj.title === title)[0];
     setOpen(true);
-    setTargetWork(title);
+    setTargetTitle(title);
+    setTargetId(works.indexOf(tmpObj));
   };
 
   return (
@@ -58,7 +61,9 @@ function Portfolio() {
                 padding: '3px 15px 3px 15px',
                 background: targetsTabNum[index] ? '#333333' : '',
                 color: targetsTabNum[index] ? '#FFFFFF' : '#333333',
-                fontSize: '1.125rem',
+                // fontSize: '1.125rem',
+                fontSize: '16pt',
+                fontWeight: 'bold'
               }}
               key={index}
             >
@@ -73,7 +78,7 @@ function Portfolio() {
       <Grid container spacing={6}>
         {works.map((item, index) => (
           <Grid item xs={3} key={index}>
-            <PortfolioCard item={item} handleClickOpenWork={handleClickOpenWork} />
+            <PortfolioCard item={item} handleClickOpenWork={() => {handleClickOpenWork(item.title)}} />
           </Grid>
         ))}
       </Grid>
@@ -101,62 +106,62 @@ function Portfolio() {
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
       >
-        {targetWork === 'ODDSBETA Sport Website'
-        && <Oddsbeta handleClose={handleBackdropClose} open={open} work={works[0]} />}
+        {targetTitle === 'ODDSBETA Sport Website'
+        && <Oddsbeta handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'ODDSBETA Cricket Scorecard Widget'
-        && <Widget handleClose={handleBackdropClose} open={open} work={works[1]} />}
+        {targetTitle === 'ODDSBETA Cricket Scorecard Widget'
+        && <Widget handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'TOAD Wine Company Website'
-        && <Toad handleClose={handleBackdropClose} open={open} work={works[2]} />}
+        {targetTitle === 'TOAD Wine Company Website'
+        && <Toad handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Accounting Data Conversion Backend Development'
-        && <AWS handleClose={handleBackdropClose} open={open} work={works[3]} />}
+        {targetTitle === 'Accounting Data Conversion Backend Development'
+        && <AWS handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Member System Backend Development'
-        && <MemberSystem handleClose={handleBackdropClose} open={open} work={works[4]} />}
+        {targetTitle === 'Member System Backend Development'
+        && <MemberSystem handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Explainable Digital Currency Candlestick Pattern AI Learner'
-        && <XAI handleClose={handleBackdropClose} open={open} work={works[5]} />}
+        {targetTitle === 'Explainable Digital Currency Candlestick Pattern AI Learner'
+        && <XAI handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Deep Learning-Based Recommendation APP for Taiwan Tourist Attractions'
-        && <Travel handleClose={handleBackdropClose} open={open} work={works[6]} />}
+        {targetTitle === 'Deep Learning-Based Recommendation APP for Taiwan Tourist Attractions'
+        && <Travel handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Deep Learning-Based Candlestick Pattern Recognition System'
-        && <PatternHunter handleClose={handleBackdropClose} open={open} work={works[7]} />}
+        {targetTitle === 'Deep Learning-Based Candlestick Pattern Recognition System'
+        && <PatternHunter handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Ensemble Machine Learning on Crowdfunding Data for Project Status and Amount Pledge Prediction'
-        && <Crowdfunding handleClose={handleBackdropClose} open={open} work={works[8]} />}
+        {targetTitle === 'Ensemble Machine Learning on Crowdfunding Data for Project Status and Amount Pledge Prediction'
+        && <Crowdfunding handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Cathlife Critical Illness Insurance Purchasing Data Analysis'
-        && <Insurance handleClose={handleBackdropClose} open={open} work={works[9]} />}
+        {targetTitle === 'Cathlife Critical Illness Insurance Purchasing Data Analysis'
+        && <Insurance handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === "Kaggle's House Prices Prediction"
-        && <House handleClose={handleBackdropClose} open={open} work={works[10]} />}
+        {targetTitle === "Kaggle's House Prices Prediction"
+        && <House handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Exploring the Relationship between Corporate Financial Indicators and Stock Valuation through Econometric Methods'
-        && <Econometrics handleClose={handleBackdropClose} open={open} work={works[11]} />}
+        {targetTitle === 'Exploring the Relationship between Corporate Financial Indicators and Stock Valuation through Econometric Methods'
+        && <Econometrics handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === "Evaluation and Financial Analysis of Taiwan's Electric Vehicle Supply Chain Companies"
-        && <Accounting handleClose={handleBackdropClose} open={open} work={works[12]} />}
+        {targetTitle === "Evaluation and Financial Analysis of Taiwan's Electric Vehicle Supply Chain Companies"
+        && <Accounting handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'The Application of Kelly Criterion in Determining Optimal Capital Structure'
-        && <Kelly handleClose={handleBackdropClose} open={open} work={works[13]} />}
+        {targetTitle === 'The Application of Kelly Criterion in Determining Optimal Capital Structure'
+        && <Kelly handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Configuration, Planning, and Exploration of Public Transportation'
-        && <Traffic handleClose={handleBackdropClose} open={open} work={works[14]} />}
+        {targetTitle === 'Configuration, Planning, and Exploration of Public Transportation'
+        && <Traffic handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Teaching Notes for Financial Innovation Course at National Taiwan University'
-        && <NTU handleClose={handleBackdropClose} open={open} work={works[15]} />}
+        {targetTitle === 'Teaching Notes for Financial Innovation Course at National Taiwan University'
+        && <NTU handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Lecture Notes for Data Structures and Algorithms'
-        && <Algorithms handleClose={handleBackdropClose} open={open} work={works[16]} />}
+        {targetTitle === 'Lecture Notes for Data Structures and Algorithms'
+        && <Algorithms handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Lecture Notes for Machine Learning'
-        && <MachineLearning handleClose={handleBackdropClose} open={open} work={works[17]} />}
+        {targetTitle === 'Lecture Notes for Machine Learning'
+        && <MachineLearning handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
 
-        {targetWork === 'Linear Algebra with Python'
-        && <LinearAlgebra handleClose={handleBackdropClose} open={open} work={works[18]} />}
+        {targetTitle === 'Linear Algebra with Python'
+        && <LinearAlgebra handleClose={handleBackdropClose} open={open} work={works[targetId]} />}
       </Backdrop>
     </Box>
   );

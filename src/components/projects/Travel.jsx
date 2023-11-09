@@ -16,7 +16,7 @@ function Travel({ open, handleClose, work }) {
         open={open}
         onClose={handleClose}
         sx={{
-          '& .MuiPaper-root': { minWidth: '900px' } }}
+          '& .MuiPaper-root': { minWidth: '1200px' } }}
       >
         <IconButton
           size="medium"

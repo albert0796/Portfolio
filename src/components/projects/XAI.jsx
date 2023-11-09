@@ -17,7 +17,7 @@ function XAI({ open, handleClose, work }) {
         open={open}
         onClose={handleClose}
         sx={{
-          '& .MuiPaper-root': { minWidth: '900px' } }}
+          '& .MuiPaper-root': { minWidth: '1000px' } }}
       >
         <IconButton
           size="medium"

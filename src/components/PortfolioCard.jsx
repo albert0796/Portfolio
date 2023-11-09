@@ -16,16 +16,19 @@ const StyledButton = styled(({ ...props }) => (
     backgroundColor: '#FFFFFF',
   },
   '> .button__word': {
-    color: '#757575',
-    fontSize: '15px',
+    color: 'primary.main',
+    // color: 'black',
+    fontSize: '20px',
+    // fontWeight: 'bold',
     transition: 'all 300ms ease-out',
   },
   ':hover > .button__word': {
-    fontSize: '20px',
+    fontSize: '22px',
     transition: 'all 300ms ease-out',
   },
   '> .button__icon': {
-    color: '#757575',
+    color: 'primary.main',
+    // color: 'black',
     fontSize: '22px',
     transition: 'all 300ms ease-out',
   },
@@ -51,6 +54,7 @@ function PortfolioCard({ item, handleClickOpenWork }) {
     <Card
       className={`card__${item.id}`}
       style={{ maxWidth: '340px', borderRadius: '8px' }}
+      onClick={() => { handleClickOpenWork(item.title); }}
     >
       <CardActionArea>
         <CardMedia
@@ -59,7 +63,7 @@ function PortfolioCard({ item, handleClickOpenWork }) {
           image={item.image.file}
         />
         <CardContent sx={{ padding: '12px 12px 10px 12px' }}>
-          <Box sx={{ fontSize: '18px', color: 'primary.main', lineHeight: '22px' }}>
+          <Box sx={{ fontSize: '18px', color: 'primary.main', lineHeight: '22px', fontWeight: 'bold', }}>
             {item.title}
           </Box>
         </CardContent>
