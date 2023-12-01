@@ -52,7 +52,7 @@ function PortfolioContextProvider({ children }) {
       details: [
         'This project won the championship in the National College Open Data Artificial Intelligence Competition.',
         "The project aims to build an iOS app that provides recommendations for tourist attractions in Taiwan to fulfill users' travel needs while visiting Taiwan. When users capture any interesting scenes around the world, and input them into the app, the system will utilize a deep learning model to recognize and recommend Taiwan tourist spots that are most like the captured scene.",
-        "The recognition models apply transfer learning, includes ResNet50, MobileNet, DenseNet and VGG16. I also try different optimizers, normalization, activations, learning rates to tune the models. As to mobile devices, I integrated Core ML 2.0, a machine learning framework introduced by Apple at WWWDC 2018, into the app. All the computation is run by GCP virtual machine."
+        "The recognition models apply transfer learning, including ResNet50, MobileNet, DenseNet and VGG16. I also try different optimizers, normalization, activations, learning rates to tune the models. As to mobile devices, I integrate Core ML 2.0, a machine learning framework introduced by Apple at WWWDC 2018, into the app. All the computation is run by GCP virtual machine."
       ],
       link: {
         website: '',
@@ -78,7 +78,7 @@ function PortfolioContextProvider({ children }) {
       },
       details: [
         'The paper gets accepted at the Knowledge and Smart Technology (KST) 2022 International Conference, hosted by IEEE.',
-        'Given the black-box of deep neural network (DNN), the study aims to expose and enhance the explainability of a DNN-based trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. The study applies modified adversarial attack to explore the model’s explainability and data augmentation to generate adversarial training samples for models to enhance its explainability.',
+        'Given the black-box of deep neural network (DNN), the study aims to explore and enhance the explainability of a DNN-based trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. The study applies modified adversarial attack to explore the model’s explainability and data augmentation to generate adversarial training samples for models to enhance its explainability.',
       ],
       link: {
         website: 'https://ieeexplore.ieee.org/document/9727231?fbclid=IwAR3doeRuCKiY19_yQbSFqeiKBnurg4n1eK9tPEETEpiCXp2kolE1hYB-I7M',
@@ -156,7 +156,7 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'The project aims to evaluate the success status and the final pledge amount of a launched project at the early stage in Kickstarter and Indiegogo, which are two world-famous crowdfunding platforms.',
+        'The project aims to evaluate the success status and the final pledged amount of a launched project at the early stage in Kickstarter and Indiegogo, which are two world-famous crowdfunding platforms.',
         'I apply the Stacking, an ensemble machine learning method, to make prediction and compare its performance with different machine learning models, including XGBoost, Neural Network, Ridge Regression, Random Forest, SVM, etc. The project also builds analysis pipeline, which includes data cleaning, EDA, feature engineering and model validation.'],
       link: {
         website: '',
@@ -181,7 +181,7 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'The goal of the project is to predict the final sale prices of houses. The dataset contains various features of residential home, such as the number of bedrooms, the size of the lot, the neighborhood, and many others. The project covers much feature engineering, involving handling missing values, transforming variables, creating interaction terms. Additionally, it applies Stacking, ensemble learning, and hype-tunes multiple machine learning model to predict and make comparison.',
+        'The goal of the project is to predict the final sale prices of houses. The dataset contains various features of residential home, such as the number of bedrooms, the size of the lot, the neighborhood, and many others. The project covers much data processing, involving feature engineering, handling missing values, transforming variables, creating interaction terms. Additionally, it applies Stacking, ensemble learning, and hype-tunes multiple machine learning model to predict and make comparison.',
       ],
       link: {
         website: '',
@@ -206,8 +206,8 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        "The project achieved third place in the Enterprise Value and Risk Analysis category of the Soochow University's 2018 College of Commerce's research competition.",
-        "2.	This study conducts an industry analysis of the supply chain for Tesla electric vehicle charging connectors, focusing on both the global and Taiwanese markets.",
+        "The project achieved the third place in the Enterprise Value and Risk Analysis category of the Soochow University's 2018 College of Commerce's research competition.",
+        "This study conducts an industry analysis of the supply chain for Tesla electric vehicle charging connectors, focusing on both the global and Taiwanese markets.",
         'It extensively examines the financial statements of three Taiwanese suppliers, namely BizLink Holding Inc, SINBON Electronics, and K. S. TERMINALS INC., to analyze various financial aspects including profitability, cash flow, operational efficiency, short-term debt, long-term debt, and DuPont analysis.',
         'Based on the findings, the most financially robust company is identified, and a stock price forecast is generated to provide investment predictions.',
       ],
@@ -236,10 +236,10 @@ function PortfolioContextProvider({ children }) {
       details: [
         "The overall process of this project aims to automate the conversion of accounting data from the company's AWS platform and import it into the new ERP system.",
         'The following steps are needed:',
-        "Enable the necessary credentials for the AWS SP API and integrate the API to retrieve the accounting data from the company's AWS platform.",
-        'Format the accounting data and package it into an API using Python and the Flask backend framework.',
-        'Set up a Docker environment in the Google console platform and deploy a SQL database along with the completed API within the Docker space.',
-        'Write an algorithm to periodically request the API from the GCP and make the data stored in the cloud SQL database.',
+        "Enable the necessary credentials for the AWS SP API and integrate the API to retrieve the accounting data from the company's AWS platform",
+        'Format the accounting data and package it into an API using Python and the Flask backend framework',
+        'Set up a Docker environment in the Google Cloud Platform (GCP) and deploy a SQL database along with the completed API within the Docker space',
+        'Write an algorithm to periodically request the API from the GCP and make the data stored in the SQL cloud database',
       ],
       link: {
         website: '',
@@ -264,7 +264,7 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        "I led to apply Firebase's Authentication, online Firestore, Cloud Function, and App Check to develop the develop members' authentication, database, and information security. The authentication includes mobile phone OTP, Email and Facebook certification. All the process was also tested under Firebase local emulator.",
+        "I led to apply Firebase's Authentication, online Firestore, Cloud Function, and App Check to develop members' authentication, database, and information security. The authentication includes mobile phone OTP, Email and Facebook certification. All the process was also tested under Firebase local emulator.",
       ],
       link: {
         website: '',
@@ -289,8 +289,8 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'I managed the full-stack development of the Toad Wine Company Website, including all the front-end’s interface, including website animations homepage, product catalog, and the back-end Blogger and Firebase database development.',
-        'The project uses Blogger and Firebase as the backend system and hosts the website on the Google console platform. The merchant posts the desired articles and images in the Blogger blog, and the website will request the content using the Blogger API and render them on the website. Additionally, given the privacy matter, the purchase records of members are stored in an external database built by Firebase.',
+        'I managed the full-stack development of the Toad Wine Company Website, including all the front-end interface, including website animations, homepage, product catalogs, and the back-end Blogger and Firebase database development.',
+        'The project uses Blogger and Firebase as the back-end system and hosts the website on the Google Cloud Platform. The merchant posts the desired articles and images in the Blogger blog, and the website will request the content using the Blogger API and render them on the website. Additionally, given the privacy matter, the purchase records of members are stored in an external database built by Firebase.',
       ],
       link: {
         website: 'https://toad2015.com/',
@@ -341,8 +341,8 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'The Widget presents the real time score and schedule about various sports events, like cricket, football, and basketball, in the form of scorecard and provides it as a package for users. Users can simply integrate the scorecard Widget into their own websites, without the need for additional frontend and backend development or utility designs.',
-        'I led all the frontend development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
+        'The Widget presents the real time score and schedule about various sports events, like cricket, football, and basketball, in the form of scorecard and provides it as a package for users. Users can simply integrate the scorecard Widget into their own websites, without the need for additional front-end and back-end development or utility designs.',
+        'I led all the front-end development of the scorecard and packaging of the Widget. For the detail of widget, please refer to the document below.',
       ],
       link: {
         website: 'https://sprodm.uni247.xyz/#/category/cricket',
@@ -369,8 +369,8 @@ function PortfolioContextProvider({ children }) {
       details: [
         'This project aims to build a member system whose technical structure combines API development and cloud deployment.',
         'The following steps are needed:',
-        'Develop a member system API that can get, create, update, delete user data from the database and use Flask as the back-end framework.',
-        'Set up a Docker environment in the Google console platform and deploy a MongoDB database along with the completed API within the Docker space.',
+        'Develop a member system API that can get, create, update, delete user data from the database and use Flask as the back-end framework',
+        'Set up a Docker environment in the Google console platform and deploy a MongoDB database along with the completed API within the Docker space',
       ],
       link: {
         website: '',
@@ -445,7 +445,7 @@ function PortfolioContextProvider({ children }) {
         height: '',
       },
       details: [
-        'It is a lecture note made for the machine-related courses offered in the graduate schools of Soochow University. It covers multiple machine learning methods, including EDA, Bayesian, Clustering, Decision Tree, Dimension Reduction, Ensemble, KNN, Logistic Regression, Neural Network, Regression, SVM, Validation. Each method has note of concept and demo of source code.',
+        'It is a lecture note made for the machine-related courses offered in the graduate schools of Soochow University. It covers multiple machine learning methods, including EDA, Bayesian, Clustering, Decision Tree, Dimension Reduction, Ensemble, KNN, Logistic Regression, Neural Network, Regression, SVM, Validation. Each method has notes of concept and demo of source code.',
         'The Final project aims to predict S&P 500 index’s Close price ten days ahead, using daily features (Open, High, Low, Close, Volume) of each day, including the current day and the past 30 days. Noticeably, it applies cross-validation to tune hyperparameters. To avoid overfitting and maintain the model’s robustness, it chooses hyperparameters which has max value of mean test score + 1.96 * std test score in cross-validation.',
       ],
       link: {
