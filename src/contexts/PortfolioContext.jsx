@@ -34,6 +34,32 @@ function PortfolioContextProvider({ children }) {
   const categories = ['all', 'machine learning', 'data analysis', 'web & app', 'economics', 'class handout'];
 
   const works = [
+    // xai
+    {
+      id: 0,
+      image: {
+        file: imageXai,
+        width: '',
+        height: '',
+      },
+      title: 'Explainable Digital Currency Candlestick Pattern AI Learner',
+      category: 'machine learning',
+      video: {
+        file: videoXai,
+        width: '',
+        height: '',
+      },
+      details: [
+        'The paper gets accepted at the Knowledge and Smart Technology (KST) 2022 International Conference, hosted by IEEE.',
+        'Given the black-box of deep neural network (DNN), the study aims to explore and enhance the explainability of a DNN-based trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. The study applies modified adversarial attack to explore the model’s explainability and data augmentation to generate adversarial training samples for models to enhance its explainability.',
+      ],
+      link: {
+        website: 'https://ieeexplore.ieee.org/document/9727231?fbclid=IwAR3doeRuCKiY19_yQbSFqeiKBnurg4n1eK9tPEETEpiCXp2kolE1hYB-I7M',
+        document: 'https://drive.google.com/file/d/1ii87CH1jMoPjkiLWGv_j_yqF9VJhzKVX/view',
+        github: 'https://github.com/pecu/FinancialVision/tree/master/Explainable%20Digital%20Currency%20Candlestick%20Pattern%20AI%20Learner',
+      },
+      skills: 'Explainable Artificial Intelligence, Data Augmentation, Adversarial Attacks, Convolutional Neural Network, Candlestick Patterns, Time-Series Encoding, Financial Vision',
+    },
     // deep travel
     {
       id: 1,
@@ -60,32 +86,6 @@ function PortfolioContextProvider({ children }) {
         github: 'https://github.com/albert0796/MachineLearning/tree/master/Project_TaiwanDeepTravel',
       },
       skills: 'Deep learning, Transfer learning, iOS Core ML 2.0, Image data annotation, Google Cloud computing, Data augmentation',
-    },
-    // xai
-    {
-      id: 0,
-      image: {
-        file: imageXai,
-        width: '',
-        height: '',
-      },
-      title: 'Explainable Digital Currency Candlestick Pattern AI Learner',
-      category: 'machine learning',
-      video: {
-        file: videoXai,
-        width: '',
-        height: '',
-      },
-      details: [
-        'The paper gets accepted at the Knowledge and Smart Technology (KST) 2022 International Conference, hosted by IEEE.',
-        'Given the black-box of deep neural network (DNN), the study aims to explore and enhance the explainability of a DNN-based trading strategy, candlestick pattern recognition, and makes an acceptable justification for traders in the cryptocurrency market. The study applies modified adversarial attack to explore the model’s explainability and data augmentation to generate adversarial training samples for models to enhance its explainability.',
-      ],
-      link: {
-        website: 'https://ieeexplore.ieee.org/document/9727231?fbclid=IwAR3doeRuCKiY19_yQbSFqeiKBnurg4n1eK9tPEETEpiCXp2kolE1hYB-I7M',
-        document: 'https://drive.google.com/file/d/1ii87CH1jMoPjkiLWGv_j_yqF9VJhzKVX/view',
-        github: 'https://github.com/pecu/FinancialVision/tree/master/Explainable%20Digital%20Currency%20Candlestick%20Pattern%20AI%20Learner',
-      },
-      skills: 'Explainable Artificial Intelligence, Data Augmentation, Adversarial Attacks, Convolutional Neural Network, Candlestick Patterns, Time-Series Encoding, Financial Vision',
     },
     // insurance
     {
@@ -273,6 +273,34 @@ function PortfolioContextProvider({ children }) {
       },
       skills: 'Firebase Cloud Functions, Authentication, Firestore, App Check, Security Rule, and local emulator, React.js. Javascript, CSS, html',
     },
+    // member system
+    {
+      id: 10,
+      image: {
+        file: imageUserSystem,
+        width: '',
+        height: '',
+      },
+      title: 'Member System Backend Development',
+      category: 'web & app',
+      video: {
+        file: '',
+        width: '',
+        height: '',
+      },
+      details: [
+        'This project aims to build a member system whose technical structure combines API development and cloud deployment.',
+        'The following steps are needed:',
+        'Develop a member system API that can get, create, update, delete user data from the database and use Flask as the back-end framework',
+        'Set up a Docker environment in the Google console platform and deploy a MongoDB database along with the completed API within the Docker space',
+      ],
+      link: {
+        website: '',
+        document: '',
+        github: 'https://github.com/albert0796/Member-System',
+      },
+      skills: 'Flask, Python, Docker, Google Cloud Platform (GCP)',
+    },
     // toad
     {
       id: 8,
@@ -350,34 +378,6 @@ function PortfolioContextProvider({ children }) {
         github: '',
       },
       skills: 'React.js, HTML, CSS, Javascript, Material UI, Google Cloud Platform (GCP)',
-    },
-    // member system
-    {
-      id: 10,
-      image: {
-        file: imageUserSystem,
-        width: '',
-        height: '',
-      },
-      title: 'Member System Backend Development',
-      category: 'web & app',
-      video: {
-        file: '',
-        width: '',
-        height: '',
-      },
-      details: [
-        'This project aims to build a member system whose technical structure combines API development and cloud deployment.',
-        'The following steps are needed:',
-        'Develop a member system API that can get, create, update, delete user data from the database and use Flask as the back-end framework',
-        'Set up a Docker environment in the Google console platform and deploy a MongoDB database along with the completed API within the Docker space',
-      ],
-      link: {
-        website: '',
-        document: '',
-        github: 'https://github.com/albert0796/Member-System',
-      },
-      skills: 'Flask, Python, Docker, Google Cloud Platform (GCP)',
     },
     // econometric
     {
